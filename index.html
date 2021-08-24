@@ -1,0 +1,1197 @@
+<!-- Shubham Sambhaji Sawant -->
+<!-- instagram : @shubhams1401-->
+<!-- 
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////   ////////  ////    //     //  /////////  ////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //   ////////    //    /////////  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  ////////   //////         //  /////////  ////// 
+
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  
+
+ ////////   ///////    ///////////////  ////////   //     //   ///////     //////    ///////  
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+ ////////  /////////  //     //     //  /////////  /////////  /////////      //        //
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+////////   //     //  //     //     //  ////////   //     //  //     //    ///       //////  
+
+ ////////  /////////   //     //     //  ////////    ////////  //////////
+//         //     //   //     //     //  //     //  //     //      //    
+//         //     //   //     //     //  //     //  //     //      //    
+ ///////   /////////   //     //     //  /////////  //     //      //
+       //  //     //   //     //     //  //     //  //     //      //   
+       //  //     //   //     //     //  //     //  //     //      //   
+////////   //     //    //////////////   //     //  //     //      //
+-->
+<!-- Shubham Sambhaji Sawant -->
+<!-- instagram : @shubhams1401-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matrix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://shubhams1401-sawant.github.io/styles_by_shubhams1401/shubhams1401.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+    <meta name="description" content="Matrix Addition, Substraction, Multiplication, Division">
+    <meta name="keywords" content="Matrix Addition, Matrix Substraction, Matrix  Multiplication, Matrix Division, shubhams1401 matrix,shubhams1401,Shubham, Sambhaji, Sawant">
+    <meta name="author" content="Shubham Sambhaji Sawant">
+  </head>
+  <body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand logo text-uppercase"  href="index.html">Matrix</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <a class="nav-link text-capitalize text-danger font-weight-bold" href="index.html">
+          home
+          </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Addition
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item btn btn-primary" onclick="two_By_Two_Matrix_addition()">2x2 Matrix</button>
+              <button class="dropdown-item btn btn-primary" onclick="three_By_Three_Matrix_addition()">3x3 Matrix</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item btn btn-primary" disabled>Enter Matrix Order</button>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Substraction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item btn btn-primary" onclick="two_By_Two_Matrix_substraction()">2x2 Matrix</button>
+              <button class="dropdown-item btn btn-primary" onclick="three_By_Three_Matrix_substraction()">3x3 Matrix</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item btn btn-primary" disabled>Enter Matrix Order</button>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Multiplication
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item btn btn-primary" onclick="two_By_Two_Matrix_multiplication()">2x2 Matrix</button>
+              <button class="dropdown-item btn btn-primary" onclick="three_By_Three_Matrix_multiplication()">3x3 Matrix</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item btn btn-primary" disabled>Enter Matrix Order</button>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Division
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item btn btn-primary" onclick="two_By_Two_Matrix_division()">2x2 Matrix</button>
+              <button class="dropdown-item btn btn-primary" onclick="three_By_Three_Matrix_division()">3x3 Matrix</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item btn btn-primary" disabled>Enter Matrix Order</button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+            About Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid main_screen"  id="home">
+      <div class="home">
+        <h1 class="text-uppercase">Matrix</h1>
+      </div>
+      <div class="text-center">
+        <h3>Addition, Sustraction, Multiplication, Division</h3>
+      </div>
+    </div>
+    <!-- Addition of two matrix (2x2) -->
+    <div class="container-fluid" id="Addition_container" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Addition of Two Matrix <span class="lead">(2x2)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Addition()">
+      </div>
+      <div id="result-section-addition"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <table id="result-addition" class="result-table  mx-auto mb-5"></table>
+      </div>
+    </div>
+    <!-- Substraction of two matrix (2x2) -->
+    <div class="container-fluid" id="Substraction_container" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Substraction of Two Matrix <span class="lead">(2x2)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2-substraction" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2-substraction" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2-substraction" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2-substraction" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Substraction()">
+      </div>
+      <div id="result-section-substraction"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <table id="result-substraction" class="result-table  mx-auto mb-5"></table>
+      </div>
+    </div>
+    <!-- Multiplication of two matrix (2x2) -->
+    <div class="container-fluid" id="Multiplication_container" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Multiplication of Two Matrix <span class="lead">(2x2)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2-multiplication" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2-multiplication" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2-multiplication" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2-multiplication" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Multiplication()">
+      </div>
+      <div id="result-section-multiplication"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <table id="result-multiplication" class="result-table  mx-auto mb-5"></table>
+      </div>
+    </div>
+    <!-- Division of two matrix (2x2) -->
+    <div class="container-fluid" id="Division_container" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Division of Two Matrix <span class="lead">(2x2)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2-division" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2-division" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2-division" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2-division" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Division()">
+      </div>
+      <div id="result-section-division"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <p class="result-table m-auto text-center text-capitalize" id="division_error" style="display: none;"></p>
+        <table id="result-division" class="result-table mx-auto mb-5"></table>
+      </div>
+    </div>
+    <!-- Addition of two matrix (3x3) -->
+    <div class="container-fluid" id="Addition_container_3x3" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Addition of Two Matrix <span class="lead">(3x3)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1_3x3" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2_3x3" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-3_3x3" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1_3x3" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2_3x3" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-3_3x3" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-3__column-1_3x3" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-2_3x3" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-3_3x3" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1_3x3" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2_3x3" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-3_3x3" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1_3x3" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2_3x3" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-3_3x3" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-3__column-1_3x3" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-2_3x3" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-3_3x3" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Addition_3x3()">
+      </div>
+      <div id="result-section-addition_3x3"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <table id="result-addition_3x3" class="result-table mx-auto mb-5"></table>
+      </div>
+    </div>
+    <!-- Substraction of two matrix (3x3) -->
+    <div class="container-fluid" id="Substraction_container_3x3" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Substraction of Two Matrix <span class="lead">(3x3)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-3_3x3-substraction" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-3_3x3-substraction" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-3__column-1_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-2_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-3_3x3-substraction" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-3_3x3-substraction" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-3_3x3-substraction" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-3__column-1_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-2_3x3-substraction" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-3_3x3-substraction" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Substraction_3x3()">
+      </div>
+      <div id="result-section-substraction_3x3"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <table id="result-substraction_3x3" class="result-table mx-auto mb-5"></table>
+      </div>
+    </div>
+    <!-- Multiplication of two matrix (3x3) -->
+    <div class="container-fluid" id="Multiplication_container_3x3" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Multiplication of Two Matrix <span class="lead">(3x3)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-3_3x3-multiplication" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-3_3x3-multiplication" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-3__column-1_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-2_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-3_3x3-multiplication" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-3_3x3-multiplication" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-3_3x3-multiplication" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-3__column-1_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-2_3x3-multiplication" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-3_3x3-multiplication" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Multiplication_3x3()">
+      </div>
+      <div id="result-section-multiplication_3x3"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <table id="result-multiplication_3x3" class="result-table mx-auto mb-5"></table>
+      </div>
+    </div>
+    <!-- Division of two matrix (3x3) -->
+    <div class="container-fluid" id="Division_container_3x3" style="display: none;">
+      <h1 class="text-capitalize text-center pt-2">Division of Two Matrix <span class="lead">(3x3)</span></h1>
+      <h3 class="text-capitalize text-center">Matrix One</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-1__column-1_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-2_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-1__column-3_3x3-division" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-2__column-1_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-2_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-2__column-3_3x3-division" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_1__row-3__column-1_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-2_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_1__row-3__column-3_3x3-division" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <h3 class="text-capitalize text-center">Matrix Two</h3>
+      <form>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-1__column-1_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-2_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-1__column-3_3x3-division" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-2__column-1_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-2_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-2__column-3_3x3-division" class="input_size">
+        </div>
+        <div class="form-group text-center mb-1">
+          <input type="number" name="" id="matrix_2__row-3__column-1_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-2_3x3-division" class="input_size">
+          <input type="number" name="" id="matrix_2__row-3__column-3_3x3-division" class="input_size">
+        </div>
+        <div class="text-center m-0 pt-0">
+          <input type="reset" name="" value="Clear" class="btn btn-outline-danger mb-1">
+        </div>
+      </form>
+      <div class="text-center mt-1">  
+        <input type="button" name="" value="CALCULATE" class="btn btn-outline-success" onclick="calculate_Division_3x3()">
+      </div>
+      <div id="result-section-division_3x3"style="display: none;">
+        <h2 class="text-center text-capitalize mt-2">result</h2>
+        <p class="result-table m-auto text-center text-capitalize" id="division_error_3x3" style="display: none;"></p>
+        <table id="result-division_3x3" class="result-table mx-auto mb-5"></table>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // 2x2
+      function home() {
+        document.getElementById('home').style.display = "flex";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      function two_By_Two_Matrix_addition() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "block";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      function two_By_Two_Matrix_substraction() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "block";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      function two_By_Two_Matrix_multiplication() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "block";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      function two_By_Two_Matrix_division() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "block";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      //3x3
+      function three_By_Three_Matrix_addition() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "block";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      
+      function three_By_Three_Matrix_substraction() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "block";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      
+      function three_By_Three_Matrix_multiplication() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "block";
+        document.getElementById('Division_container_3x3').style.display = "none";
+      }
+      
+      function three_By_Three_Matrix_division() {
+        document.getElementById('home').style.display = "none";
+        document.getElementById('Addition_container').style.display = "none";
+        document.getElementById('Substraction_container').style.display = "none";
+        document.getElementById('Multiplication_container').style.display = "none";
+        document.getElementById('Division_container').style.display = "none";
+      
+      
+        document.getElementById('Addition_container_3x3').style.display = "none";
+        document.getElementById('Substraction_container_3x3').style.display = "none";
+        document.getElementById('Multiplication_container_3x3').style.display = "none";
+        document.getElementById('Division_container_3x3').style.display = "block";
+      }
+      
+      // complete
+      function calculate_Addition(){
+      
+        document.getElementById('result-section-addition').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2').value);
+        
+        const mA = math.matrix([[matrix_1__row_1__column_1, matrix_1__row_1__column_2], [matrix_1__row_2__column_1, matrix_1__row_2__column_2]]);
+        const mB = math.matrix([[matrix_2__row_1__column_1, matrix_2__row_1__column_2], [matrix_2__row_2__column_1, matrix_2__row_2__column_2]]);
+      
+        // Matrix Addition
+        const matrixAdd = math.add(mA, mB);
+      
+        // document.getElementById("result").innerHTML = matrixAdd;
+        // console.log(matrixAdd._data[0][0]);
+      
+        var result = document.getElementById("result-addition");
+        result.innerHTML = '<tr><td>'+ 
+                            matrixAdd._data[0][0] +'</td><td>'+ 
+                            matrixAdd._data[0][1] +'</td></tr>'+
+                            '<tr><td>'+
+                            matrixAdd._data[1][0] +'</td><td>'+ 
+                            matrixAdd._data[1][1] +'</td></tr>'
+      }
+      // complete
+      function calculate_Substraction(){
+      
+        document.getElementById('result-section-substraction').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1-substraction').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2-substraction').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1-substraction').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2-substraction').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1-substraction').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2-substraction').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1-substraction').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2-substraction').value);
+        
+        const mA = math.matrix([[matrix_1__row_1__column_1, matrix_1__row_1__column_2], [matrix_1__row_2__column_1, matrix_1__row_2__column_2]]);
+        const mB = math.matrix([[matrix_2__row_1__column_1, matrix_2__row_1__column_2], [matrix_2__row_2__column_1, matrix_2__row_2__column_2]]);
+      
+        // Matrix Addition
+        const matrixSub = math.subtract(mA, mB);
+      
+        // document.getElementById("result").innerHTML = matrixAdd;
+        // console.log(matrixAdd._data[0][0]);
+      
+        var result = document.getElementById("result-substraction");
+        result.innerHTML = '<tr><td>'+ 
+                            matrixSub._data[0][0] +'</td><td>'+ 
+                            matrixSub._data[0][1] +'</td></tr>'+
+                            '<tr><td>'+ 
+                            matrixSub._data[1][0] +'</td><td>'+ 
+                            matrixSub._data[1][1] +'</td></tr>'
+      }
+      // complete
+      function calculate_Multiplication(){
+      
+        document.getElementById('result-section-multiplication').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1-multiplication').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2-multiplication').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1-multiplication').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2-multiplication').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1-multiplication').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2-multiplication').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1-multiplication').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2-multiplication').value);
+        
+        const mA = math.matrix([[matrix_1__row_1__column_1, matrix_1__row_1__column_2], [matrix_1__row_2__column_1, matrix_1__row_2__column_2]]);
+        const mB = math.matrix([[matrix_2__row_1__column_1, matrix_2__row_1__column_2], [matrix_2__row_2__column_1, matrix_2__row_2__column_2]]);
+      
+        // Matrix Addition
+        const matrixMult = math.multiply(mA, mB);
+      
+        // document.getElementById("result").innerHTML = matrixAdd;
+        // console.log(matrixAdd._data[0][0]);
+      
+        var result = document.getElementById("result-multiplication");
+        result.innerHTML = '<tr><td>'+ 
+                            matrixMult._data[0][0] +'</td><td>'+ 
+                            matrixMult._data[0][1] +'</td></tr>'+
+                            '<tr><td>'+ 
+                            matrixMult._data[1][0] +'</td><td>'+ 
+                            matrixMult._data[1][1] +'</td></tr>'
+      }
+      // complete
+      function calculate_Division(){
+      
+        document.getElementById('result-section-division').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1-division').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2-division').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1-division').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2-division').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1-division').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2-division').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1-division').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2-division').value);
+        
+        const mA = math.matrix([[matrix_1__row_1__column_1, matrix_1__row_1__column_2], [matrix_1__row_2__column_1, matrix_1__row_2__column_2]]);
+        const mB = math.matrix([[matrix_2__row_1__column_1, matrix_2__row_1__column_2], [matrix_2__row_2__column_1, matrix_2__row_2__column_2]]);
+      
+        try{
+            // Matrix Addition
+      
+            const matrixDiv = math.divide(mA, mB);
+          
+            // document.getElementById("result").innerHTML = matrixAdd;
+            // console.log(matrixAdd._data[0][0]);
+          
+            var result = document.getElementById("result-division");
+            result.innerHTML = '<tr><td>'+ matrixDiv._data[0][0].toFixed(2) +'</td><td>'+ matrixDiv._data[0][1].toFixed(2) +'</td></tr><tr><td>'+ matrixDiv._data[1][0].toFixed(2) +'</td><td>'+ matrixDiv._data[1][1].toFixed(2) +'</td></tr>';
+          }
+        catch(err){
+          var result = document.getElementById('division_error');
+             var input_matrix = document.getElementById("result-division");
+             result.style.display = "block";
+             result.innerHTML = "By definition, A/B=A⋅B<sup>−1</sup>.<br>The matrices can't be divided.<br>So, first find the inverse of ";
+             input_matrix.innerHTML ='<tr><td>'+ 
+                              matrix_2__row_1__column_1 +'</td><td>'+ 
+                              matrix_2__row_1__column_2 +'</td><td>'+ 
+      
+                              '<tr><td>'+ 
+                              matrix_2__row_2__column_1 +'</td><td>'+ 
+                              matrix_2__row_2__column_2 +'</td></tr>';
+        }
+      }
+      //complete
+      function calculate_Addition_3x3(){
+      
+        document.getElementById('result-section-addition_3x3').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_1__row_3__column_1;
+        var matrix_1__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+      
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_2__row_3__column_1;
+        var matrix_2__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1_3x3').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2_3x3').value);
+        matrix_1__row_1__column_3 = parseInt(document.getElementById('matrix_1__row-1__column-3_3x3').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1_3x3').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2_3x3').value);
+        matrix_1__row_2__column_3 = parseInt(document.getElementById('matrix_1__row-2__column-3_3x3').value);
+        matrix_1__row_3__column_1 = parseInt(document.getElementById('matrix_1__row-3__column-1_3x3').value);
+        matrix_1__row_3__column_2 = parseInt(document.getElementById('matrix_1__row-3__column-2_3x3').value);
+        matrix_1__row_3__column_3 = parseInt(document.getElementById('matrix_1__row-3__column-3_3x3').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1_3x3').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2_3x3').value);
+        matrix_2__row_1__column_3 = parseInt(document.getElementById('matrix_2__row-1__column-3_3x3').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1_3x3').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2_3x3').value);
+        matrix_2__row_2__column_3 = parseInt(document.getElementById('matrix_2__row-2__column-3_3x3').value);
+        matrix_2__row_3__column_1 = parseInt(document.getElementById('matrix_2__row-3__column-1_3x3').value);
+        matrix_2__row_3__column_2 = parseInt(document.getElementById('matrix_2__row-3__column-2_3x3').value);
+        matrix_2__row_3__column_3 = parseInt(document.getElementById('matrix_2__row-3__column-3_3x3').value);
+        
+        const mA = math.matrix([
+          [matrix_1__row_1__column_1, matrix_1__row_1__column_2, matrix_1__row_1__column_3], 
+          [matrix_1__row_2__column_1, matrix_1__row_2__column_2, matrix_1__row_2__column_3], 
+          [matrix_1__row_3__column_1, matrix_1__row_3__column_2, matrix_1__row_3__column_3]
+                                ]);
+        const mB = math.matrix([
+          [matrix_2__row_1__column_1, matrix_2__row_1__column_2, matrix_2__row_1__column_3], 
+          [matrix_2__row_2__column_1, matrix_2__row_2__column_2, matrix_2__row_2__column_3], 
+          [matrix_2__row_3__column_1, matrix_2__row_3__column_2, matrix_2__row_3__column_3]
+                                ]);
+        
+      
+        // Matrix Addition
+        const matrixAdd = math.add(mA, mB);
+      
+        // document.getElementById("result").innerHTML = matrixAdd;
+        // console.log(matrixAdd._data[0][0]);
+      
+        var result = document.getElementById("result-addition_3x3");
+        result.innerHTML = '<tr><td>'+ 
+                            matrixAdd._data[0][0] +'</td><td>'+ 
+                            matrixAdd._data[0][1] +'</td><td>'+ 
+                            matrixAdd._data[0][2] +'</td></tr>'+
+      
+                            '<tr><td>'+ 
+                            matrixAdd._data[1][0] +'</td><td>'+ 
+                            matrixAdd._data[1][1] +'</td><td>'+ 
+                            matrixAdd._data[1][2] +'</td></tr>'+
+      
+                            '<tr><td>'+ 
+                            matrixAdd._data[2][0] +'</td><td>'+ 
+                            matrixAdd._data[2][1] +'</td><td>'+ 
+                            matrixAdd._data[2][2] +'</td></tr>'              
+      }
+      //complete
+      function calculate_Substraction_3x3(){
+      
+        document.getElementById('result-section-substraction_3x3').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_1__row_3__column_1;
+        var matrix_1__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+      
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_2__row_3__column_1;
+        var matrix_2__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1_3x3-substraction').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2_3x3-substraction').value);
+        matrix_1__row_1__column_3 = parseInt(document.getElementById('matrix_1__row-1__column-3_3x3-substraction').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1_3x3-substraction').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2_3x3-substraction').value);
+        matrix_1__row_2__column_3 = parseInt(document.getElementById('matrix_1__row-2__column-3_3x3-substraction').value);
+        matrix_1__row_3__column_1 = parseInt(document.getElementById('matrix_1__row-3__column-1_3x3-substraction').value);
+        matrix_1__row_3__column_2 = parseInt(document.getElementById('matrix_1__row-3__column-2_3x3-substraction').value);
+        matrix_1__row_3__column_3 = parseInt(document.getElementById('matrix_1__row-3__column-3_3x3-substraction').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1_3x3-substraction').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2_3x3-substraction').value);
+        matrix_2__row_1__column_3 = parseInt(document.getElementById('matrix_2__row-1__column-3_3x3-substraction').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1_3x3-substraction').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2_3x3-substraction').value);
+        matrix_2__row_2__column_3 = parseInt(document.getElementById('matrix_2__row-2__column-3_3x3-substraction').value);
+        matrix_2__row_3__column_1 = parseInt(document.getElementById('matrix_2__row-3__column-1_3x3-substraction').value);
+        matrix_2__row_3__column_2 = parseInt(document.getElementById('matrix_2__row-3__column-2_3x3-substraction').value);
+        matrix_2__row_3__column_3 = parseInt(document.getElementById('matrix_2__row-3__column-3_3x3-substraction').value);
+        
+        const mA = math.matrix([
+          [matrix_1__row_1__column_1, matrix_1__row_1__column_2, matrix_1__row_1__column_3], 
+          [matrix_1__row_2__column_1, matrix_1__row_2__column_2, matrix_1__row_2__column_3], 
+          [matrix_1__row_3__column_1, matrix_1__row_3__column_2, matrix_1__row_3__column_3]
+                                ]);
+        const mB = math.matrix([
+          [matrix_2__row_1__column_1, matrix_2__row_1__column_2, matrix_2__row_1__column_3], 
+          [matrix_2__row_2__column_1, matrix_2__row_2__column_2, matrix_2__row_2__column_3], 
+          [matrix_2__row_3__column_1, matrix_2__row_3__column_2, matrix_2__row_3__column_3]
+                                ]);
+        
+      
+        // Matrix Addition
+        const matrixSub = math.subtract(mA, mB);
+      
+        // document.getElementById("result").innerHTML = matrixAdd;
+        // console.log(matrixAdd._data[0][0]);
+      
+        var result = document.getElementById("result-substraction_3x3");
+        result.innerHTML = '<tr><td>'+ 
+                            matrixSub._data[0][0] +'</td><td>'+ 
+                            matrixSub._data[0][1] +'</td><td>'+ 
+                            matrixSub._data[0][2] +'</td></tr>'+
+      
+                            '<tr><td>'+ 
+                            matrixSub._data[1][0] +'</td><td>'+ 
+                            matrixSub._data[1][1] +'</td><td>'+ 
+                            matrixSub._data[1][2] +'</td></tr>'+
+      
+                            '<tr><td>'+ 
+                            matrixSub._data[2][0] +'</td><td>'+ 
+                            matrixSub._data[2][1] +'</td><td>'+ 
+                            matrixSub._data[2][2] +'</td></tr>'
+                            
+      }
+      //complete
+      function calculate_Multiplication_3x3(){
+      
+        document.getElementById('result-section-multiplication_3x3').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_1__row_3__column_1;
+        var matrix_1__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+      
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_2__row_3__column_1;
+        var matrix_2__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1_3x3-multiplication').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2_3x3-multiplication').value);
+        matrix_1__row_1__column_3 = parseInt(document.getElementById('matrix_1__row-1__column-3_3x3-multiplication').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1_3x3-multiplication').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2_3x3-multiplication').value);
+        matrix_1__row_2__column_3 = parseInt(document.getElementById('matrix_1__row-2__column-3_3x3-multiplication').value);
+        matrix_1__row_3__column_1 = parseInt(document.getElementById('matrix_1__row-3__column-1_3x3-multiplication').value);
+        matrix_1__row_3__column_2 = parseInt(document.getElementById('matrix_1__row-3__column-2_3x3-multiplication').value);
+        matrix_1__row_3__column_3 = parseInt(document.getElementById('matrix_1__row-3__column-3_3x3-multiplication').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1_3x3-multiplication').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2_3x3-multiplication').value);
+        matrix_2__row_1__column_3 = parseInt(document.getElementById('matrix_2__row-1__column-3_3x3-multiplication').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1_3x3-multiplication').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2_3x3-multiplication').value);
+        matrix_2__row_2__column_3 = parseInt(document.getElementById('matrix_2__row-2__column-3_3x3-multiplication').value);
+        matrix_2__row_3__column_1 = parseInt(document.getElementById('matrix_2__row-3__column-1_3x3-multiplication').value);
+        matrix_2__row_3__column_2 = parseInt(document.getElementById('matrix_2__row-3__column-2_3x3-multiplication').value);
+        matrix_2__row_3__column_3 = parseInt(document.getElementById('matrix_2__row-3__column-3_3x3-multiplication').value);
+        
+        const mA = math.matrix([
+          [matrix_1__row_1__column_1, matrix_1__row_1__column_2, matrix_1__row_1__column_3], 
+          [matrix_1__row_2__column_1, matrix_1__row_2__column_2, matrix_1__row_2__column_3], 
+          [matrix_1__row_3__column_1, matrix_1__row_3__column_2, matrix_1__row_3__column_3]
+                                ]);
+        const mB = math.matrix([
+          [matrix_2__row_1__column_1, matrix_2__row_1__column_2, matrix_2__row_1__column_3], 
+          [matrix_2__row_2__column_1, matrix_2__row_2__column_2, matrix_2__row_2__column_3], 
+          [matrix_2__row_3__column_1, matrix_2__row_3__column_2, matrix_2__row_3__column_3]
+                                ]);
+        
+      
+        // Matrix Addition
+        const matrixMult = math.multiply(mA, mB);
+      
+        // document.getElementById("result").innerHTML = matrixAdd;
+        // console.log(matrixAdd._data[0][0]);
+      
+        var result = document.getElementById("result-multiplication_3x3");
+        result.innerHTML = '<tr><td>'+ 
+                            matrixMult._data[0][0] +'</td><td>'+ 
+                            matrixMult._data[0][1] +'</td><td>'+ 
+                            matrixMult._data[0][2] +'</td></tr>'+
+      
+                            '<tr><td>'+ 
+                            matrixMult._data[1][0] +'</td><td>'+ 
+                            matrixMult._data[1][1] +'</td><td>'+ 
+                            matrixMult._data[1][2] +'</td></tr>'+
+      
+                            '<tr><td>'+ 
+                            matrixMult._data[2][0] +'</td><td>'+ 
+                            matrixMult._data[2][1] +'</td><td>'+ 
+                            matrixMult._data[2][2] +'</td></tr>'
+                            
+      }
+      //complete
+      function calculate_Division_3x3(){
+      
+        document.getElementById('result-section-division_3x3').style.display = "block";
+        var matrix_1__row_1__column_1;
+        var matrix_1__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_1__row_2__column_1;
+        var matrix_1__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_1__row_3__column_1;
+        var matrix_1__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+      
+      
+        var matrix_2__row_1__column_1;
+        var matrix_2__row_1__column_2;
+        var matrix_1__row_1__column_3
+      
+        var matrix_2__row_2__column_1;
+        var matrix_2__row_2__column_2;
+        var matrix_1__row_2__column_3;
+      
+        var matrix_2__row_3__column_1;
+        var matrix_2__row_3__column_2;
+        var matrix_1__row_3__column_3;
+      
+        matrix_1__row_1__column_1 = parseInt(document.getElementById('matrix_1__row-1__column-1_3x3-division').value);
+        matrix_1__row_1__column_2 = parseInt(document.getElementById('matrix_1__row-1__column-2_3x3-division').value);
+        matrix_1__row_1__column_3 = parseInt(document.getElementById('matrix_1__row-1__column-3_3x3-division').value);
+        matrix_1__row_2__column_1 = parseInt(document.getElementById('matrix_1__row-2__column-1_3x3-division').value);
+        matrix_1__row_2__column_2 = parseInt(document.getElementById('matrix_1__row-2__column-2_3x3-division').value);
+        matrix_1__row_2__column_3 = parseInt(document.getElementById('matrix_1__row-2__column-3_3x3-division').value);
+        matrix_1__row_3__column_1 = parseInt(document.getElementById('matrix_1__row-3__column-1_3x3-division').value);
+        matrix_1__row_3__column_2 = parseInt(document.getElementById('matrix_1__row-3__column-2_3x3-division').value);
+        matrix_1__row_3__column_3 = parseInt(document.getElementById('matrix_1__row-3__column-3_3x3-division').value);
+      
+        matrix_2__row_1__column_1 = parseInt(document.getElementById('matrix_2__row-1__column-1_3x3-division').value);
+        matrix_2__row_1__column_2 = parseInt(document.getElementById('matrix_2__row-1__column-2_3x3-division').value);
+        matrix_2__row_1__column_3 = parseInt(document.getElementById('matrix_2__row-1__column-3_3x3-division').value);
+        matrix_2__row_2__column_1 = parseInt(document.getElementById('matrix_2__row-2__column-1_3x3-division').value);
+        matrix_2__row_2__column_2 = parseInt(document.getElementById('matrix_2__row-2__column-2_3x3-division').value);
+        matrix_2__row_2__column_3 = parseInt(document.getElementById('matrix_2__row-2__column-3_3x3-division').value);
+        matrix_2__row_3__column_1 = parseInt(document.getElementById('matrix_2__row-3__column-1_3x3-division').value);
+        matrix_2__row_3__column_2 = parseInt(document.getElementById('matrix_2__row-3__column-2_3x3-division').value);
+        matrix_2__row_3__column_3 = parseInt(document.getElementById('matrix_2__row-3__column-3_3x3-division').value);
+        
+        const mA = math.matrix([
+          [matrix_1__row_1__column_1, matrix_1__row_1__column_2, matrix_1__row_1__column_3], 
+          [matrix_1__row_2__column_1, matrix_1__row_2__column_2, matrix_1__row_2__column_3], 
+          [matrix_1__row_3__column_1, matrix_1__row_3__column_2, matrix_1__row_3__column_3]
+                                ]);
+        const mB = math.matrix([
+          [matrix_2__row_1__column_1, matrix_2__row_1__column_2, matrix_2__row_1__column_3], 
+          [matrix_2__row_2__column_1, matrix_2__row_2__column_2, matrix_2__row_2__column_3], 
+          [matrix_2__row_3__column_1, matrix_2__row_3__column_2, matrix_2__row_3__column_3]
+                                ]);
+        
+      
+        // Matrix Addition
+        try{
+          const matrixDiv = math.divide(mA, mB);
+        
+          // document.getElementById("result").innerHTML = matrixAdd;
+          // console.log(matrixAdd._data[0][0]);
+        
+          var result = document.getElementById("result-division_3x3");
+          result.innerHTML = '<tr><td>'+ 
+                              matrixDiv._data[0][0].toFixed(2) +'</td><td>'+ 
+                              matrixDiv._data[0][1].toFixed(2) +'</td><td>'+ 
+                              matrixDiv._data[0][2].toFixed(2) +'</td></tr>'+
+      
+                              '<tr><td>'+ 
+                              matrixDiv._data[1][0].toFixed(2) +'</td><td>'+ 
+                              matrixDiv._data[1][1].toFixed(2) +'</td><td>'+ 
+                              matrixDiv._data[1][2].toFixed(2) +'</td></tr>'+
+      
+                              '<tr><td>'+ 
+                              matrixDiv._data[2][0].toFixed(2) +'</td><td>'+ 
+                              matrixDiv._data[2][1].toFixed(2) +'</td><td>'+ 
+                              matrixDiv._data[2][2].toFixed(2) +'</td></tr>';
+          }
+          catch(err){
+            var result = document.getElementById('division_error_3x3');
+             var input_matrix = document.getElementById("result-division_3x3");
+             result.style.display = "block";
+             result.innerHTML = "By definition, A/B=A⋅B<sup>−1</sup>.<br>The matrices can't be divided.<br>So, first find the inverse of ";
+             input_matrix.innerHTML ='<tr><td>'+ 
+                              matrix_2__row_1__column_1 +'</td><td>'+ 
+                              matrix_2__row_1__column_2 +'</td><td>'+ 
+                              matrix_2__row_1__column_3 +'</td></tr>'+
+      
+                              '<tr><td>'+ 
+                              matrix_2__row_2__column_1 +'</td><td>'+ 
+                              matrix_2__row_2__column_2 +'</td><td>'+ 
+                              matrix_2__row_2__column_3 +'</td></tr>'+
+      
+                              '<tr><td>'+ 
+                              matrix_2__row_3__column_1 +'</td><td>'+ 
+                              matrix_2__row_3__column_2 +'</td><td>'+ 
+                              matrix_2__row_3__column_3 +'</td></tr>';
+      
+          }
+                            
+      }
+      
+    </script>
+  </body>
+</html>
+<!-- Shubham Sambhaji Sawant -->
+<!-- instagram : @shubhams1401-->
+<!-- 
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////   ////////  ////    //     //  /////////  ////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //   ////////    //    /////////  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  ////////   //////         //  /////////  ////// 
+
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  
+
+ ////////   ///////    ///////////////  ////////   //     //   ///////     //////    ///////  
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+ ////////  /////////  //     //     //  /////////  /////////  /////////      //        //
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+////////   //     //  //     //     //  ////////   //     //  //     //    ///       //////  
+
+ ////////  /////////   //     //     //  ////////    ////////  //////////
+//         //     //   //     //     //  //     //  //     //      //    
+//         //     //   //     //     //  //     //  //     //      //    
+ ///////   /////////   //     //     //  /////////  //     //      //
+       //  //     //   //     //     //  //     //  //     //      //   
+       //  //     //   //     //     //  //     //  //     //      //   
+////////   //     //    //////////////   //     //  //     //      //
+-->
+<!-- Shubham Sambhaji Sawant -->
+<!-- instagram : @shubhams1401-->
